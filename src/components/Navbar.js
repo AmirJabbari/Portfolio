@@ -85,7 +85,8 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+               // to="/resume"
+                to=""
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
@@ -94,9 +95,12 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumya-jit.tech/"
+               /* href="https://blogs.soumya-jit.tech/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noreferrer"*/
+                  as={Link}
+                  to=""
+                  onClick={() => updateExpanded(false)}
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
